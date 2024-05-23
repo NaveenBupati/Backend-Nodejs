@@ -15,6 +15,7 @@ const path = require("path")
 
 app.use(bodyParser.json());
 app.use(cors())
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use("/vendor",vendorRoutes)
 app.use("/firm",firmRoutes)
