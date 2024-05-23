@@ -15,11 +15,9 @@ This documentation provides information on the available API endpoints for manag
 **Method:** POST
 
 **Request Body:**
-- `name`: Name of the vendor (string)
+- `userName`: Name of the vendor (string)
 - `email`: Email address of the vendor (string)
 - `password`: Password for the vendor (string)
-- `phone`: Phone number of the vendor (string)
-- `address`: Address of the vendor (string)
 
 ### Vendor Login
 **Endpoint:** [`https://backend-nodejs-restaurent-register-apis.onrender.com/vendor/login`](https://backend-nodejs-restaurent-register-apis.onrender.com/vendor/login)
