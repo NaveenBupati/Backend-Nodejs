@@ -10,7 +10,7 @@ router.post("/addProduct/:firmId",controller.addProduct)
 router.get("/firmProducts/:firmId",controller.getProductByFirm)
 
 
-router.get("/uploads/:imageName",(req, res)=>{
+router.get("../uploads/:imageName",(req, res)=>{
     const imageName = req.params.imageName;
     res.headersSent("Content-Type","image/jpeg");
     res.sendFile(path.join(__dirname,".." , "uploads",imageName))
